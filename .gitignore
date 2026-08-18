@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.poetry/
+
+.env
+
+.pytest_cache/
+
+*.log
+logs/
+
+*.db
+*.sqlite
+*.sqlite3
