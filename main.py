@@ -1,9 +1,9 @@
 import uvicorn
 from fastapi import FastAPI
 
-from src.core.logging import logger
+from src.core.logging import logger_config
 
-logger.setup()
+logger_config.setup()
 app = FastAPI()
 
 if __name__ == '__main__':
