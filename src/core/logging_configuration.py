@@ -19,7 +19,8 @@ class Logger:
         console_handler.setFormatter(formatter)
         console_handler.setLevel(self.level)
 
-        logger = logging.getLogger(__name__)
+        logger = logging.getLogger()
+        logger.setLevel(self.level)
         logger.addHandler(console_handler)
 
 logger_config = Logger()
