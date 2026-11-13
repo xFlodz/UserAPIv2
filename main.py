@@ -1,7 +1,6 @@
 import uvicorn
 import logging
 from fastapi import FastAPI
-from contextlib import asynccontextmanager
 
 from src.core.logging_configuration import logger_config
 from src.api import router
