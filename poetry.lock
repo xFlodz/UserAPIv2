@@ -13,6 +13,26 @@ files = [
 ]
 
 [[package]]
+name = "alembic"
+version = "1.20.1"
+description = "A database migration tool for SQLAlchemy."
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "alembic-1.20.1-py3-none-any.whl", hash = "sha256:9970712cfb81ea26c8658d378aaa5b8f6ff9146e5bb111d70497c164016cf598"},
+    {file = "alembic-1.20.1.tar.gz", hash = "sha256:83490def1f723413db5096591f7609ac52544805be93849170088ed04f5a2e0b"},
+]
+
+[package.dependencies]
+Mako = "*"
+SQLAlchemy = ">=2.0"
+typing-extensions = ">=4.12"
+
+[package.extras]
+tz = ["tzdata"]
+
+[[package]]
 name = "annotated-doc"
 version = "0.0.5"
 description = "Document parameters, class attributes, return types, and variables inline, with Annotated."
@@ -635,6 +655,26 @@ groups = ["main"]
 files = [
     {file = "logging-0.4.9.6.tar.gz", hash = "sha256:26f6b50773f085042d301085bd1bf5d9f3735704db9f37c1ce6d8b85c38f2417"},
 ]
+
+[[package]]
+name = "mako"
+version = "1.4.3"
+description = "A super-fast templating language that borrows the best ideas from the existing templating languages."
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "mako-1.4.3-py3-none-any.whl", hash = "sha256:723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f"},
+    {file = "mako-1.4.3.tar.gz", hash = "sha256:cd6537fe88d5fec315c55c2f8529bc4ce7a9a352ad7db3eeaa6a66e2dd4ec37a"},
+]
+
+[package.dependencies]
+MarkupSafe = ">=2.0"
+
+[package.extras]
+babel = ["Babel"]
+lingua = ["lingua (>=4.16)"]
+testing = ["pytest"]
 
 [[package]]
 name = "markdown-it-py"
@@ -2003,4 +2043,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "9830e0459bb7c658fc038226139cbe0ac6a2381999a6d50921d2a73c8b49f5b9"
+content-hash = "893b20cdb23d4ee4fe632d426703968b0c6b104d1fdf740a86053d53484b435b"
